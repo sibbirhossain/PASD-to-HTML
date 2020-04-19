@@ -1,0 +1,366 @@
+
+.heading{
+    text-align: center;
+    padding: 50px 0 60px;
+    position: relative;
+}
+.heading h2{
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.heading p{
+    font-size: 20px;
+    color: #999999;
+}
+
+header{
+    background: #f6f9f9;
+    padding: 20px 60px;
+}
+.logo{
+    max-width: 20%;
+    flex-basis: 20%;
+    
+}
+.logo img{}
+
+
+
+nav{
+    max-width: 80%;
+    flex-basis: 80%;
+   
+}
+nav ul{
+    justify-content: flex-end;
+}
+nav ul li{}
+nav ul li a{
+    color: #2d3950;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px;
+    display: block;
+}
+nav ul li a:hover{
+    color: #15a4fa;
+}
+
+
+.banner-section{
+    background: url(../images/strict.jpg);
+    /* min-height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner-section .row{
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+.banner-content{
+    text-align: center;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.banner-content h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+.banner-content span{
+    width: 100%;
+    height: 2px;
+    background-color: #15a4fa;
+    display: block;
+}
+.banner-content p{
+    font-size: 20px;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+.banner-content button{
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    border: 1px solid #15a4fa;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.arrow-down{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    left: 50%;
+    bottom: 3em;
+    transform: translateX(-50%);
+}
+
+
+/*
+===============================
+about section
+================================
+*/
+
+.about-section{
+    background-color: #f6f9f9;
+}
+
+
+/*
+===============================
+feature section
+================================
+*/
+
+.feature-section{}
+.feature{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 65px 30px;
+}
+.feature-icon{
+    width: 100px;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#15a4fa+50,48baff+50 */
+background: rgb(21,164,250); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(21,164,250,1) 50%, rgba(72,186,255,1) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(21,164,250,1) 50%,rgba(72,186,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(21,164,250,1) 50%,rgba(72,186,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15a4fa', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+    margin: auto;
+}
+.feature-icon i{
+    font-size: 50px;
+    color: #fff;
+    line-height: 2;
+    text-shadow: 2px 3px 5px #71717161;
+}
+.feature h3{
+    font-size: 22px;
+    color: #2d3950;
+    margin: 20px 0;
+}
+.feature p{
+    font-size: 15px;
+    color: #999999;
+}
+
+/*
+===============================
+showcase section
+================================
+*/
+
+
+.showcase-section{
+    background: #f6f9f9;
+    padding: 100px;
+
+}
+.showcase{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 15px;
+}
+.showcase-detail{
+    position: relative;
+}
+.showcase-detail img{}
+
+.showcase-detail .overlay {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background: #12a0f5b8;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.showcase-detail:hover .overlay {
+    opacity: 1;
+    height: 100%;
+
+}
+
+.showcase-detail .plus {
+    color: #fff;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    transform: translate(-40%, -50%);
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.showcase-detail:hover .plus {
+    opacity: 1;
+    top: 50%;
+}
+
+.showcase-detail .link {
+    color: #fff;
+    position: absolute;
+    left: 55%;
+    top: 60%;
+    transform: translate(-55%, -50%);
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.showcase-detail:hover .link {
+    opacity: 1;
+    top: 50%;
+}
+/*
+=================================================
+Contact Section
+=================================================
+*/
+.contact-section {
+    background-image: url(../images/contact.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-blend-mode: overlay;
+  position: relative;
+    padding-bottom: 100px;
+}
+.contact-section .overlay{
+        background-color: rgba(45, 57, 80, 0.9);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+}
+.contact-section .row{
+    justify-content: center;
+    position: relative;
+}
+
+.contact-section .heading h2 {
+    color: #fff;
+    position: relative;
+}
+
+.contact-form {
+    max-width: 60%;
+    flex-basis: 60%;
+}
+
+.contact-form form {}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #999;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #999;
+    border-radius: 5px;
+}
+
+.contact-form form ul {
+    align-items: center;
+}
+
+.contact-form form ul li {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.contact-form form ul li input {}
+
+.contact-form form ul li input[type="checkbox"] {
+    width: auto;
+}
+
+.contact-form form ul li input[type="submit"] {
+    width: auto;
+    float: right;
+    font-size: 18px;
+    padding: 12px 50px;
+    border-color: #15a4fa;
+    cursor: pointer;
+}
+
+.contact-form form ul li label {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/*
+=================================================
+Footer Section
+=================================================
+*/
+footer {
+    padding: 30px 0;
+}
+footer .row{
+    align-items: center;
+}
+
+.copyright {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.copyright p {
+    font-size: 15px;
+    color: #999999;
+}
+
+.copyright p a {
+    color: #999999;
+}
+
+.social {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.social ul {float: right;}
+
+.social ul li {display: inline-block;}
+
+.social ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #15a4fa;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.5s;
+    
+}
+
+.social ul li a:hover {background-color: #2d3950;}
